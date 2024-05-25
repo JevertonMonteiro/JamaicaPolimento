@@ -75,9 +75,10 @@ h1 {
 }
 
 .elemente-conteudo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: flex; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
     padding: 80px;
 }
 
@@ -109,36 +110,31 @@ h1 {
     line-height: 1.4;
 }
 
-footer {
+footer{
     background-color: rgb(105, 0, 0);
     text-align: center;
     padding: 80px;
 }
-
-.elemente-rodape {
-    display: grid;
+.instagram{
+    width: 44px;
+}
+span{
+    font-size: 15px;
 }
 
-.elemente-rodape,
-a {
-    text-decoration: none;
-}
-
-.elemente-rodape .instagram,
-.maps {
-    width: 60px;
-    padding: 10px;
-}
-
-.elemente-rodape,
-a {
-    font-size: 50px;
+.elemente-rodape{
+    font-size: 30px;
     color: white;
+}
+.elemente-rodape,a{
+    color: white;
+    text-decoration: none;
+    font-size: 45px;
 }
 
 .sobre .cor {
     color: white;
-    font-size: 58px;
+    font-size: 45px;
     padding-top: 30px;
 }
 
@@ -148,28 +144,36 @@ a {
     .elemente-main {
         margin: 0;
     }
-
-    .elemente-section {
-        height: auto;
-    }
+    
+    .elemente-section{
+         
+            background-image: url("img/banner.jpeg");
+            background-repeat: no-repeat;
+            background-size: auto;
+            text-align: center;
+            height: 50rem;
+      }
+    
 
     h1 {
-        font-size: 30px;
-        padding-top: 90%;
+        font-size: 40px;
+        padding-top: 85%;
     }
 
     h4 {
-        font-size: 28px;
+        font-size: 20px;
         text-transform: uppercase;
+        padding-top: 50%;
     }
 
     .elemente-pergunta {
         font-size: 13px;
         font-family: sans-serif;
+        visibility: hidden;
     }
 
     .elemente-infomacao {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .elemente-conteudo {
@@ -181,4 +185,38 @@ a {
     .elemente-cards {
         width: 100%;
     }
+    .whatsapp {
+        width: 30px;
+        margin-right: 10px;
+    }
+    .elemente-ancora {
+        background-color: rgb(29, 184, 50);
+        padding: 10px;
+        font-size: 35px;
+        text-decoration: none;
+        border-radius: 20px;
+        color: white;
+    }
+    .instagram{
+    width: 44px;
+    padding-left: 10px;
+}
+
+
+.elemente-rodape{
+    font-size: 30px;
+    color: white;
+}
+.elemente-rodape,a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.sobre .cor {
+    color: white;
+    font-size: 45px;
+    padding-top: 30px;
+}
 }
